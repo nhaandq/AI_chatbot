@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Food-Recommendation Chatbot</title>
+    <link rel="stylesheet" type="text/css" href="./static/style.css">
+    <link rel="shortcut icon" href="./static/logo.png">
+    <meta charset="UTF-8">
+    <meta name="description" content="Food-Recommendation Chatbot">
+    <meta name="keywords" content="chatbot, auto-reply, food recommend">
+    <meta name="author" content="Nhaanquys">
+    <meta name="UI icons" content="Ui icons created by Kuber_Icons - Flaticon" href="https://www.flaticon.com/free-icons/ui">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+</head>
+
+<body>
+    <div class="row">
+        <div class="col-md-10 mr-auto ml-auto">
+            <h1>
+                <span>Chatbot gợi ý món ăn</span>
+            </h1>
+            <form enctype="multipart/form-data" >
+                <div class="topspace">
+                    <div class="botavt" ><img src="./static/logo.png" alt="Chatbot logo"></img></div>
+                    <div class="botname"><span>Foodboy in your Area</span></div>
+                    <div class="theme-switch-wrapper">
+                        <label class="theme-switch" for="checkbox">
+                           <input type="checkbox" id="checkbox" />
+                           <div class="slider round"></div>
+                        </label>
+                    </div>
+                </div>
+                <div id="chatbox">
+                    <div class="col-md-8">
+                        <p class="botText">
+                            <span>Chat with me!</span>
+                        </p>
+                    </div>
+                </div>
+                <div id="userInput" class="row">
+                    <div id="upload" class="upload btn objHover">
+                        UBTN
+                        <input type="file" name="imagefile" id="imageFile" accept=".jpg, .png, .jpeg">
+                    </div>
+                    <input  id="text"   type="text"     class="form-control objHover" name="msg" placeholder="Aa..." >
+                    <button id="send"   type="submit"   class="send btn objHover">SBTN</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+<script>
+    $(document).ready(function() {
+        $("form").on("submit", function(event) {  
+            y=0;
+            var rawText = $("#text").val();
+            var usermsg = '<span>'+rawText+'</span>';
+            var userHtml = '<p class="userText">' + usermsg + "</p>";
+            $("#text").val("");
+            if (rawText!=""){
+                $("#chatbox").append(userHtml);
+                y=1;
+                document.getElementById("chatbox").scrollTop = document.getElementById("chatbox").scrollHeight;            
+            }
+            else {y=0;}           
+            if(y==1){
+                $.ajax({
+                    data: {
+                        msg: rawText,
+                    },
+                    type: "POST",
+                    url: "/get",
+                }).done(function(data) {
+                    var botHtml = '<p class="botText"><span>' + data + "</span></p>";
+                    $("#chatbox").append($.parseHTML(botHtml));
+                    document.getElementById("chatbox").scrollTop = document.getElementById("chatbox").scrollHeight;
+                });
+            }   
+            event.preventDefault();       
+        });
+
+        /* send image */
+        $("#imageFile").change(function(){
+            var file = this.files[0];
+            if (!file.type.match("image.*")) {
+                alert("Vui lòng chỉ chọn tệp hình ảnh (với phần mở rộng .jpg, .jpeg, .png).");
+            }
+            else {
+                var reader = new FileReader();
+                reader.addEventListener("load", function() {
+                    var rawImg = reader.result;
+                    var imgfile = $('imagefile')
+                    var usermsg = '<img src="'+rawImg+'"></img>';
+                    var userHtml = '<p class="userText">' + usermsg + "</p>";
+                    $("#chatbox").append(userHtml)
+                    document.getElementById("chatbox").scrollTop = document.getElementById("chatbox").scrollHeight;
+                    $.ajax({
+                        data: {
+                            msg: rawImg,
+                        },
+                        type: "POST",
+                        url: "/get",
+                    }).done(function(data) {
+                        var botHtml = '<p class="botText"><span>' + data + "</span></p>";
+                        $("#chatbox").append($.parseHTML(botHtml));
+                        document.getElementById("chatbox").scrollTop = document.getElementById("chatbox").scrollHeight;
+                    });
+                }, false);
+                if (file) {
+                    reader.readAsDataURL(file);
+                }
+            }
+            event.preventDefault();
+        }); 
+
+        /// dark/light mode ///
+        const toggleSwitch = document.querySelector('.theme-switch input[type="checkbox"]');
+        const currentTheme = localStorage.getItem('theme');
+        if (currentTheme) {
+            $("html").attr('data-theme', currentTheme);
+            if (currentTheme === 'dark') {
+                toggleSwitch.checked = true;
+            }
+        }
+        function switchTheme(e) {
+            if (e.target.checked) {
+                $("html").attr('data-theme', 'dark');
+                localStorage.setItem('theme', 'dark');
+            } 
+            else {
+                $("html").attr('data-theme', 'light');
+                localStorage.setItem('theme', 'light');
+            }
+        }
+        toggleSwitch.addEventListener('change', switchTheme);
+   
+        /// choose image to upload ///
+        $("#upload").click(function(){
+            document.getElementById("imageFile").click();
+        }); 
+        
+    });
+</script>
+
+</body>
+
+</html>

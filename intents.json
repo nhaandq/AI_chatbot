@@ -1,0 +1,158 @@
+{"intents": [
+    {"tag": "chaohoi",
+     "patterns": ["hello", "hey", "xin chào", "chào bạn", "chào anh", "chào chị", "chào cậu", "hi", "chào bot", "alo"],
+     "responses": ["Chào bạn! Mình là FoodBoy, một trợ lý ảo đẹp trai có thể lo cho từng bữa ăn của bạn đây. Bạn có thể cho mình biết tên món bạn định ăn hoặc gửi hình cho mình cũng được luôn nè, mình sẽ nói cho bạn biết nên ăn vào lúc nào nha. Nếu không thì cho mình cái địa chỉ đi, mình qua dắt đi ăn liền. Hứa nói xạo làm con bot luôn nè!"]
+    },
+    {"tag": "tambiet",
+     "patterns": ["tạm biệt", "hẹn gặp lại", "gặp lại bạn sau", "chào tạm biệt", "bye", "goodbye", "see you later", "cya", "see ya"],
+     "responses": ["Tạm biệt bạn, chúc bạn một ngày tốt lành!", "Tạm biệt <3", "Cảm ơn vì đã đến, tạm biệt! :<", "Gặp lại bạn sau nhé.", "Goodbye!", "Tạm biệt, tớ sẽ nhớ bạn lắm!", "Tạm biệt, chúc bạn ngon miệng!", "Sau này nếu không biết hôm nay ăn gì thì hãy nhớ tới mình nhé!"]
+    }, 
+    {"tag": "camon",
+     "patterns": ["cảm ơn bạn nhé", "cảm ơn rất nhiều", "ty", "thanks", "thank you", "cảm ơn nhiều nhé", "mình rất biết ơn bạn", "thanks a lot", "thanks so muck"],
+     "responses": ["Mình luôn sẵn lòng giúp đỡ bạn.^^", "Không có gì nè, chúc bạn ngon miệng!", "Rất vui được giúp đỡ bạn.", "Giúp đỡ người khác là niềm vui của mình mà, không có gì đâu nè."] 
+    }, 
+    {"tag": "khonghieu",
+     "patterns": ["jsbsbxj", "bxbxnsmak", "jsjzkzjndhxvs", "ban khoe khong", "bot ngu", "uhtshsbsbx", "iqiqi87", "khung`", "#+++$+#+"], 
+     "responses": ["Xin lỗi, mình không hiểu bạn đang nói gì. Bạn vui lòng nói lại với mình bằng tiếng Việt có dấu nhé, cảm ơn bạn.^^"] 
+    }, 
+    {"tag": "troimua",
+     "patterns": ["trời mưa", "trời lạnh", "mưa lạnh"], 
+     "responses": ["Vào những ngày mưa lạnh, sẽ chẳng có cảm giác nào bằng được ở bên cạnh người thân, bạn bè và ăn những món thật ngon ấm nóng. Hôm nay, thử rủ nhóm bạn thân đi ăn lẩu gà ớt hiểm và tận hưởng cảm giác tuyệt vời nó mang lại đi nào.^^","Bạn có biết tuyệt chiêu lấy độc trị độc không? Nếu cảm thấy trời mưa lạnh quá thì bạn có thể... đi ăn kem nha. Kem lạnh hơn trời mưa nên bạn có thể cảm thấy thời tiết ấm áp hơn một chút nè. Chúc bạn ngon miệng ^^","Vào những ngày mưa lạnh, sẽ chẳng có cảm giác nào bằng được ở bên cạnh người thân, bạn bè và ăn những món thật ngon ấm nóng. Hôm nay, thử khao nhóm bạn thân một chầu ốc hấp và tận hưởng cảm giác tuyệt vời nó mang lại đi nào.^^"] 
+    },
+    {"tag": "troinong",
+     "patterns": ["trời nóng", "trời oi bức", "nắng nóng"], 
+     "responses": ["Trời nắng nóng, bạn nên ăn trái cây như dừa, thanh long, bưởi, cam, quýt, dưa hấu,… hạn chế ăn trái cây tính nóng như sầu riêng, mít, xoài. Bạn có thể ăn nhiều rau quả nha, uống sữa nữa. Một điều bạn nên biết là mặc dù trời nắng nóng ăn kem rất ngon, nhưng bạn cũng nên hạn chế nha, ăn nhiều kem sẽ dễ gây đau họng khan tiếng đó, mình xót lắm.🥺"] 
+    },
+    {"tag": "ansang",
+     "patterns":["mình muốn ăn sáng","tôi cần ăn sáng","ăn sáng","breakfast"],
+     "responses":["Buổi sáng là một buổi ăn quan trọng trong ngày, để bắt đầu một ngày mới năng động bạn nên ăn buổi sáng no vừa đủ, đầy đủ chất dinh dưỡng và dễ tiêu bạn nhé. Những món bạn nên dùng ăn sáng là: phở, bún, bánh canh, xôi, trứng và bánh mì, nhớ ăn kèm rau xanh nha, thêm một chai sữa nữa là quá tràn trề năng lượng cho ngày mới rồi nè."]
+    },
+    {"tag": "antrua",
+     "patterns":["mình muốn ăn trưa","tôi cần ăn trưa","ăn trưa","bữa trưa","lunch"],
+     "responses":["“Bữa sáng nên ăn như một vị hoàng đế, bữa trưa nên ăn như thường dân và bữa tối nên ăn như một kẻ ăn mày”, mà thường dân thì thường ăn gì? dễ thấy nhất là ăn cơm ùi nè. Bữa trưa thì bạn nên ăn gì đó cho no sau đó nghỉ ngơi và chiều thì chiến tiếp nha, một vài món mình gợi ý cho nè: cơm tấm, cơm sườn trứng, cơm canh chua, cơm với cá kho tộ, cơm thịt kho trứng, những món đơn giản nhưng ngon lắm nha, hoặc có thể ăn bún phở cũng đầy đủ chất dinh dưỡng cho bạn đấy!"]
+    },
+    {"tag": "antoi",
+     "patterns":["Mình muốn ăn tối","Tôi cần ăn tối","Ăn tối","ăn đêm","dinner"],
+     "responses":["Buổi tối bạn nên ăn nhẹ nhàng và dễ tiêu để khi đi ngủ không bị đầy bụng khó chịu nè, và nếu ăn nhiều quá vào bữa tối thì dễ bị bé mỡ ghé thăm đó. Vậy nên, vào bữa tối bạn nên hạn chế ăn món nhiều dầu mỡ, ăn ít chất đường bột, nên ăn nhiều rau, hạn chế chất kích thích thần kinh như cà phê hoặc trà nha, hạn chế cả nước có gas để bảo vệ sức khoẻ răng miệng nè. Bữa tối gợi ý nè: ăn 1-2 bát cơm với món mặn như là thịt kho trứng, tôm rang, canh cá, thịt bò,... nhớ ăn nhiều rau nữa nha. Hoặc có thể la cà hàng quán, làm một tô phở bò hay bún giò gì cũng được nè."]
+    },
+    {"tag": "banhbeo",
+     "patterns": ["bánh bèo"],
+     "responses": ["Bánh bèo là một món bánh xuất thân từ Cố Đô Huế rất thịnh hành ở miền Trung, ngoài ra cũng phổ biến ở miền Nam Việt Nam. Tên bánh bèo xuất phát từ hình dạng giống lá bèo của bánh. Bánh làm từ bột gạo, có nhân làm từ tôm xay nhuyễn rắc lên bánh và ăn cùng nước chấm. Bánh bèo thường được dùng để ăn sáng hoặc ăn tối đó bạn nha."]
+    },
+    {"tag": "banhbotloc",
+     "patterns": ["bánh bột lọc"],
+     "responses": ["Có xuất xứ từ Huế, thường được hấp hoặc luộc, gói bằng lá chuối  (bánh bột lọc lá) hoặc không (bánh bột lọc trần), nhân bánh thường là tôm, thịt xay, nấm, hoặc chỉ đậu xanh. Bánh ăn kèm với nước chấm chua ngọt, thường được dùng để ăn sáng."]
+    },
+    {"tag": "banhcan",
+     "patterns": ["bánh căn"],
+     "responses": ["Bánh căn được làm từ bột gạo xay nhuyễn, nướng trong khuôn bánh, thường ăn thêm với trứng luộc, chả cá, xíu mại, tóp mỡ,… và nước chấm. Đặc biệt bánh căn là một món khá nổi tiếng ở Đà Lạt đấy, mùa mưa mà được lên Đà Lạt, sáng ăn bánh căn xong đi cà phê chill buổi sáng, tối lại ăn bánh căn xong ngắm mưa Đà Lạt thì còn gì bằng."]
+    },
+    {"tag": "banhcanh",
+     "patterns": ["bánh  Bánh canh bao gồm nước dùng được nấu từ tôm, cá và giò heo thêm gia vị tùy theo từng loại bánh canh. Sợi bánh canh có thể được làm từ bột gạo, bột mì, bột năng hoặc bột sắn hoặc bột gạo pha bột sắn. Bánh được làm từ bột được cán thành tấm và cắt ra thành sợi to và ngắn. Bánh canh thường được ăn cùng cá róc xương, cua ghẹ, chả cá, tôm thịt hoặc giò heo."],
+     "responses": [""]
+    },
+    {"tag": "banhchung",
+     "patterns": ["bánh chưng"],
+     "responses": ["Vài thông tin về bánh chưng nhé. Là một loại bánh truyền thống của Việt Nam, thường được làm vào dịp Tết Nguyên Đán và ngày giỗ tổ Hùng Vương. Bánh thường được gói bằng lá chuối hoặc lá dong, bên trong bỏ gạo nếp, nhân đậu xanh đặt kế bên thịt ba chỉ (ba rọi), gói thành hình vuông và buộc bằng lạc làm bằng ống cây giang hoặc dây nhựa. Bánh chín ăn dẻo, thơm, thường được ăn cùng với dưa hành, nước mắm, xì dầu rắc chút bột tiêu. Ra sau tết, bánh có thể bị lại gạo, bị cứng, khi đó người ta thường đem rán vàng trong chảo mỡ và ăn kèm với dưa góp. Bánh chưng chỉ nên ăn vào dịp lễ Tết thôi nha, chứ nếu ăn đều đặn quá thì... sẽ béo lên giống tớ đấy :("]
+    },
+    {"tag": "banhcuon",
+     "patterns": ["bánh cuốn"],
+     "responses": ["Bánh cuốn còn gọi là bánh mướt hay bánh ướt là tên gọi một loại thực phẩm làm từ bột gạo hấp tráng mỏng, cuộn tròn, bên trong độn nhân rau hoặc thịt, ăn cùng nước chấm chua ngọt hoặc mắm nêm."]
+    },
+    {"tag": "banhduc",
+     "patterns": ["bánh đúc"],
+     "responses": ["Bánh đúc là một loại bánh của Việt Nam, thường được làm bằng bột gạo (tại miền Bắc và miền Trung) hoặc bột năng (miền Nam) với một số gia vị. Bánh được làm thành tấm to, khi ăn thì cắt nhỏ thành miếng tùy thích. Là món ăn dân dã thịnh hành khắp ba miền, bánh đúc ăn giòn, mát, mịn, no bụng mà lại dễ tiêu, dễ làm và giá thành cũng rất rẻ nữa. Không chỉ được ăn như một thức quà quê, bữa ăn sáng mà điển hình là bánh đúc chấm tương, bánh đúc cũng có thể ăn kèm với canh riêu cua, rau thơm, mắm tôm, mật ong, mật mía, mứt trái cây và thậm chí cả cá kho, thịt kho tùy thích đó bạn nha, nên là bạn ăn sáng, ăn trưa hay ăn tối gì cũng được nè."]
+    },
+    {"tag": "banhgio",
+     "patterns": ["bánh giò"],
+     "responses": ["Bánh giò được làm bằng gạo tẻ, bột năng hoà với nước xương hầm, nhân làm từ thịt nạc vai có kèm mộc nhĩ, hành tím khô, tiêu, trứng cút. Buổi sáng ra vinMart hay circleK mua ăn là có nè bạn ơi."]
+    },
+    {"tag": "banhkhot",
+     "patterns": ["bánh khọt"],
+     "responses": ["Bánh khọt là loại bánh Việt Nam làm từ bột gạo hoặc bột sắn, có nhân tôm, được nướng và ăn kèm với rau sống, ớt tươi, thường ăn với nước mắm pha ngọt, rất ít khi chấm nước sốt mắm tôm. Nhân bánh thường là loại tôm sắt tươi, to vừa phải, bóc vỏ. Tuy nhiên thành phần làm bánh khọt có nước cốt dừa nên ăn nhiều sẽ bị béo lên nha bạn nha."]
+    },
+    {"tag": "banhmi",
+     "patterns": ["bánh mì"],
+     "responses": ["Bánh mì có vỏ ngoài là một ổ bánh mì nướng có da giòn, ruột mềm, còn bên trong là phần nhân, thường chứa chả lụa, thịt, cá, thực phẩm chay hoặc mứt trái cây, kèm theo một số nguyên liệu phụ khác như patê, bơ, rau, ớt và đồ chua. Ngoài ra, bánh mì còn ăn kèm với nhiều món ăn đa dạng, chẳng hạn như thịt bò kho, cá mòi hay xíu mại. À nói nhỏ, bí mật thôi nha, bánh mì mà chấm với sữa đặc thì hết nước chấm đó bạn ơi, có điều ăn nhiều thì sẽ béo như tớ thui nà T.T"]
+    }, 
+    {"tag": "banhpia",
+     "patterns": ["bánh pía"],
+     "responses": ["Bánh pía là món bánh ngọt ngàn lớp có nhân và là bánh trung thu truyền thống xuất phát từ Triều Châu, Trung Quốc và được du nhập vào các khu phố người Hoa trên thế giới. Tại Việt Nam, bánh pía là một trong những đặc sản của Sóc Trăng. Vị thanh ngọt và béo đầy bổ dưỡng, dùng ăn sáng cũng hợp lý lắm nè."]
+    }, 
+    {"tag": "banhtet",
+     "patterns": ["bánh tét"],
+     "responses": ["Bánh tét, có nơi gọi là bánh đòn, là một loại bánh trong ẩm thực của cả người Việt và một số dân tộc ít người ở miền Nam và miền Trung Việt Nam, là nét tương đồng của bánh chưng ở Miền Bắc về nguyên liệu, cách nấu, chỉ khác về hình dáng và sử dụng lá chuối để gói thay vì lá dong, vì vậy nó cũng được sử dụng nhiều nhất trong dịp Tết Nguyên đán cổ truyền của dân tộc Việt Nam với vị trí không khác bánh chưng. Nhưng cũng có nhiều bánh tét nhân chuối hay đậu đen được làm hay là bán quanh năm. "]
+    }, 
+    {"tag": "banhtrangnuong",
+     "patterns": ["bánh tráng nướng"],
+     "responses": ["Là một món ăn vặt nổi tiếng với giới trẻ, được chế biến bằng cách nướng bánh và cho nhân gồm trứng, hành phi, mỡ hành, xúc xích,..  lên trên. Bánh tráng nướng được dùng làm món ăn vặt từ buổi chiều đến đêm."]
+    }, 
+    {"tag": "banhxeo",
+     "patterns": ["bánh xèo"],
+     "responses": ["Bánh xèo có 2 loại là bánh xèo giòn và bánh xèo không giòn. Bánh xèo giòn thường cho nhân gồm tôm mực chả thịt lên phía trên, ăn cùng bánh tráng cuốn rau và chấm nước mắm chua ngọt. Ở miền nam còn ăn cùng với trứng."]
+    }, 
+    {"tag": "bunbohue",
+     "patterns": ["bún bò Huế"],
+     "responses": ["Sở hữu hương vị vô cùng hài hoà có vị cay, chua, mặn, ngọt hoà quyện vào nhau, bún bò Huế là một món ăn vô cùng nổi tiếng. Nước dùng được làm từ xương bò ninh với nước mắm và sả. Bát bún được phục vụ với thịt lợn, thịt bò, sợi bún to và dày hơn rất nhiều của bún miền Bắc, ăn kèm với nhiều loại rau mùi. "]
+    }, 
+    {"tag": "bundau",
+     "patterns": ["bún đậu"],
+     "responses": ["Thành phần chính gồm có bún tươi, đậu hũ chiên vàng, chả cốm, nem chua, mắm tôm pha chanh, ớt và ăn kèm với các loại rau thơm như tía tô, kinh giới, rau húng, xà lách, cà pháo… Món này tớ không ăn được vì tớ không chịu nổi mùi mắm tôm nên là có gì bạn ăn rồi review lại cho mình với nghen."]
+    },
+    {"tag": "bunmam",
+     "patterns": ["bún mắm"],
+     "responses": ["Bún mắm là một trong số các món ăn đặc sản của miền tây Nam bộ Việt Nam. Món ăn Việt Nam ngon này thường được nhiều người dân địa phương biến tấu với những nguyên liệu khác nhau. Nhưng thành phần chính không thể thiếu là mắm cá linh. Mắm càng ngon thì hương vị bún mắm càng đậm đà, ngon miệng. Các thành phần thường thấy để làm ra món bún mắm không thể thiếu: bún gạo, thịt lợn, hải sản và một số loại rau có gia vị khác nhau, ăn kèm theo đó là mắm nêm có sẵn trong nước dùng."]
+    },
+    {"tag": "bunrieu",
+     "patterns": ["bún riêu"],
+     "responses": ["Bún riêu hay còn gọi là bún riêu cua, có thành phần chính gồm bún tươi ăn với riêu cua. Riêu cua là canh chua được nấu từ gạch cua, thịt cua giã và lọc bỏ xác. Bún riêu thường nêm thêm mắm tôm, ăn kèm với rau sống, có bị chua thanh. Món này ăn vào mùa hè rất mát và bổ dưỡng đấy bạn nha."]
+    },
+    {"tag": "bunthitnuong",
+     "patterns": ["bún thịt nướng"],
+     "responses": ["Bún thịt nướng là một món ăn phổ biến và được yêu thích ở cả 3 miền Việt Nam. Mỗi nơi đều giữ cho mình một hương vị đặc trưng riêng tùy theo khẩu vị từng miền Bắc, Trung, Nam. Món bún này có thể dùng làm điểm tâm, bữa chính hay giữa bữa đều phù hợp. Thành phần: rau thơm, dưa leo, xà lách…(các loạị rau sống bạn thích), bún, thịt nướng, đồ chua, chả, ram, nước chấm."]
+    }, 
+    {"tag": "cakhoto",
+     "patterns": ["cá kho tộ"],
+     "responses": ["Cá kho tộ là món ăn rất phổ biến trong mâm cơm hằng ngày của người Việt Nam. Cá kho có vị mặn của nước mắm, thơm thơm của tiêu xay, cay nhẹ của ớt ăn kèm với cơm trắng dẻo mềm mang đến một món ăn cực ký “bắt miệng” và khó quên. "]
+    },
+    {"tag": "canhchua",
+     "patterns": ["canh chua"],
+     "responses": ["Là món ăn dân dã của người Việt Nam, đặc biệt là ở miền trung và miền nam, thường được nấu bằng cá hoặc thịt bò, thịt gà, rau làm chua thường là lá giang, rau thơm, cà chua, lá me, đôi khi là chanh, thích hợp ăn vào mùa hè trời nắng, rất mát và tốn cơm đó bạn ơi."]
+    },
+    {"tag": "caolau",
+     "patterns": ["cao lầu"],
+     "responses": ["Cao lầu là món ăn nổi tiếng và góp phần tạo nên cái hồn ẩm thực của phố cổ Hội An. Món cao lầu được cho là xuất hiện ở Hội An từ thế kỷ 17. Đi cùng năm tháng, cao lầu vẫn giữ trọn vẹn hương vị, chinh phục thực khách từ Âu sang Á. Cao lầu có sợi mì màu vàng dùng với tôm, thịt heo, các loại rau sống và chan ít nước. Món ăn này chỉ có ở Hội An, Đà Nẵng và Huế, nên khi nào có dịp đi du lịch miền trung nhớ thử nhé bạn hiền ơi."]
+    },
+    {"tag": "chaolong",
+     "patterns": ["cháo lòng"],
+     "responses": ["Cháo lòng là món cháo được nấu theo phương thức nấu cháo thông thường, trong sự kết hợp với nước dùng ngọt làm từ xương lợn hay nước luộc lòng lợn, và nguyên liệu chính cho bát cháo không thể thiếu các món phủ tạng lợn luộc, dồi. "]
+    },
+    {"tag": "comtam",
+     "patterns": ["cơm tấm"],
+     "responses": ["Cơm tấm là một món ăn Việt Nam có nguyên liệu chủ yếu từ gạo tấm. Thành phần thường là cơm tấm, nước mắm, mỡ hành, các món mặn kèm theo: sườn, bì, chả, trứng, đồ chua, rau. Cảm giác vừa ăn cơm vừa được khói nướng sườn phả vào mặt là đặc sản của cơm tấm Sài Gòn đó bạn ơi, trưa nay thử liền đi nè!"]
+    }, 
+    {"tag": "goicuon",
+     "patterns": ["gỏi cuốn"],
+     "responses": ["Gỏi cuốn hay còn được gọi là nem cuốn, là một món ăn khá phổ biến ở Việt Nam, nguyên liệu gồm rau xà lách, húng quế, tía tô, tôm khô, rau thơm, thịt luộc, tôm tươi.. tất cả được cuộn trong vỏ bánh tráng. Món này thì ăn vui chơi thôi nha chứ ăn no thì không phải chân ái đâu."]
+    },
+    {"tag": "hutieu",
+     "patterns": ["hủ tiếu"],
+     "responses": ["Là món ăn được du nhập từ nước ngoài nhưng phát triển rất mạnh mẽ ở miền nam Việt Nam, đặc biệt là Sài Gòn. Rất dễ tìm thấy một quán hủ tiếu trên đường hoặc một xe đẩy hủ tiếu ở đầu ngõ. Được xem là món ăn biểu tượng của ẩm thực đường phố Sài Gòn. Bạn ăn sáng, ăn trưa hay ăn tối, ăn khuya gì cũng được hết nha, đặt biệt có thể ăn mọi nơi, thường là nơi nào cũng rất ngonnnn đấy."]
+    },
+    {"tag": "miquang",
+     "patterns": ["mì Quảng"],
+     "responses": ["Món Mì Quảng chính là đặc sản nổi tiếng của tỉnh Quảng Nam, tuy nhiên lại là món quốc dân được ưa chuộng trên khắp cả nước. Nguyên liệu để làm ra một tô mì Quảng bao gồm: sợi mì vàng, bánh đa, đậu phộng, thịt lợn quay giòn và ăm kèm theo nước dùng có màu vàng nghệ đặc sánh."]
+    },
+    {"tag": "nemchua",
+     "patterns": ["nem chua"],
+     "responses": ["Nem chua (phương ngữ Bắc Bộ) hay nem (phương ngữ Trung Bộ và phương ngữ Nam Bộ) là một món ăn sử dụng thịt lợn, lợi dụng men của lá chuối (hoặc lá ổi, lá vông, lá sung v.v.) và thính gạo để ủ chín, có vị chua ngậy. Nem chua thường được ăn trực tiếp hoặc rán chín, mỗi cách ăn một vị cách nào cũng ngon hết nha bạn."]
+    },
+    {"tag": "pho",
+     "patterns": ["phở"],
+     "responses": ["Phở là một món ăn truyền thống của Việt Nam, có nguồn gốc từ Hà Nội và Nam Định, và được xem là một trong những món ăn tiêu biểu cho nền ẩm thực Việt Nam. Thành phần chính của phở là bánh phở và nước dùng cùng với thịt bò hoặc thịt gà cắt lát mỏng. Nước dùng cho nồi phở thường là nước dùng trong được ninh từ xương bò (hoặc xương lợn), kèm theo nhiều loại gia vị bao gồm quế, hồi, gừng nướng, thảo quả, sá sùng, đinh hương, hạt mùi, hành khô nướng... Thịt dùng cho món phở là thịt bò (với đủ loại thịt bắp, nạm, gầu được làm tái hay chín hẳn) hoặc thịt gà (gà ta già luộc, xé thịt cho thịt ngọt đậm đà). Bánh phở theo truyền thống được làm từ bột gạo, tráng thành tấm mỏng rồi cắt thành sợi. Phở luôn được thưởng thức khi còn nóng hổi. Theo đó, để có một bát phở ngon và đậm vị, điều này còn phụ thuộc rất nhiều vào kĩ năng của người nấu, trong đó quan trọng nhất đó chính là nồi nước dùng. Nhắc tới là thấy thèm rồi đúng hem? Thế thì những ngày chán cơm thèm ... à những ngày thấy thèm quá thì đi ăn liền nha bạn ơi. (Tớ cũng ra đầu ngõ làm một tô phở tái trứng chần full hành đây, mlem mlem) "]
+    },
+    {"tag": "xoixeo",
+     "patterns": ["xôi xéo"],
+     "responses": ["Xôi xéo được yêu thích trong những ngày se se lạnh của tiết trời Hà Nội, gói xôi dẻo thơm từng hạt nếp, dậy mùi hành phi, đầy bổ dưỡng cho một buổi sáng năng động."]
+    }
+]}
